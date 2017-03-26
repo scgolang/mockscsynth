@@ -9,6 +9,7 @@ import (
 	"github.com/scgolang/osc"
 )
 
+// New creates a new mock scsynth server.
 func New(t *testing.T, listenAddr string) osc.Conn {
 	udpAddr, err := net.ResolveUDPAddr("udp", listenAddr)
 	if err != nil {
